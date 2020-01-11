@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 var Schema = mongoose.Schema;
 
@@ -7,13 +7,22 @@ var Schema = mongoose.Schema;
  *                  - pengarangBuku, dengan tipe String
  *                  - genreBuku, dengan tipe String
  *                  - isDipinjam, dengan tipe Boolean
-*/
+ */
 const librarySchema = new Schema({
-  // isi disini
+  judulBuku: {
+    type: String
+  },
+  pengarangBuku: {
+    type: String
+  },
+  genreBuku: {
+    type: String
+  },
+  isDipinjam: {
+    type: Boolean
+  }
 });
 
-
 // TODO: Buat model mongoose dengan menggunakan skema yang didefinisikan sebelumnya
-const Library = //isi disini
-
-  module.exports = Library;
+const Library = mongoose.model("Library", librarySchema, "library");
+module.exports = Library;
