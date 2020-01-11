@@ -7,5 +7,5 @@ module.exports = {
     : "mongodb+srv://admin:semogaakudiberikemudahan@sandbox-workshop-9ynur.mongodb.net/learnit-react",
   // APP_PORT sebagai PORT untuk menjalankan project express dengan environment variable `HOST`
   //          jika environment variable tidak tersedia, maka nilai APP_PORT menjadi 80
-  APP_PORT: process.env.POST ? process.env.POST : 80
+  APP_PORT: process.env.PORT ? process.env.PORT : 80
 };
