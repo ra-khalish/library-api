@@ -1,7 +1,3 @@
-
-# Created by https://www.gitignore.io/api/linux,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=linux,visualstudiocode
-
 ### Linux ###
 *~
 
@@ -27,7 +23,5 @@
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
-
-# End of https://www.gitignore.io/api/linux,visualstudiocode
 
 node_modules
