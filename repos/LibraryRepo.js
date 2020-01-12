@@ -36,9 +36,7 @@ class LibraryRepo {
   // TODO: Buat fungsi dengan nama `rubahInfoBuku` untuk merubah informasi buku dengan ID
   async rubahInfoBuku(id, infoBukuBaru) {
     const query = { _id: id };
-    return this.model.findOneAndUpdate(query, {
-      $set: infoBukuBaru
-    });
+    return this.model.findOneAndUpdate(query, { $set: infoBukuBaru });
   }
 
   // Fungsi dengan nama `rubahStatusPeminjaman` untuk merubah informasi buku dengan ID
